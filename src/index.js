@@ -3,6 +3,8 @@ const Http = require('http');
 const fs = require('fs');
 const tls = require('tls');
 
+let acme = {}
+
 // Load certificates or handle them dynamically via SNI
 function loadCertificates(domain) {
     try {
@@ -16,8 +18,10 @@ function loadCertificates(domain) {
     }
 }
 
-function sniCallback(domain, cb) {
+async function sniCallback(domain, cb) {
     try {
+        await acme.checkCertificate(domain)
+
         const sslContext = tls.createSecureContext(loadCertificates(domain));
         cb(null, sslContext);
     } catch (error) {
@@ -32,5 +36,5 @@ const https = Https.createServer({ SNICallback: sniCallback });
 // Create HTTP server
 const http = Http.createServer();
 
-module.exports = { https, http };
+module.exports = { https, http, acme };
 
