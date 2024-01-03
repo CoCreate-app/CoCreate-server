@@ -2,39 +2,41 @@ const Https = require('https');
 const Http = require('http');
 const fs = require('fs');
 const tls = require('tls');
+const acme = require('@cocreate/acme')
 
-let acme = {}
+let server = {
+    acme: new acme(),  // Initially an empty object or some placeholder functionality
 
-// Load certificates or handle them dynamically via SNI
-function loadCertificates(domain) {
-    try {
-        return {
-            key: fs.readFileSync(`certificates/${domain}/private.key`),
-            cert: fs.readFileSync(`certificates/${domain}/certificate.crt`),
-        };
-    } catch (error) {
-        console.error("Error loading certificates for domain:", domain);
-        throw error; // Or handle it by returning default certificates
-    }
-}
+    loadCertificates(domain) {
+        try {
+            return {
+                key: fs.readFileSync(`/etc/certificates/${domain}/private-key.pem`),
+                cert: fs.readFileSync(`/etc/certificates/${domain}/fullchain.pem`),
+            };
+        } catch (error) {
+            console.error("Error loading certificates for domain:", domain);
+            throw error;  // Or handle it by returning default certificates
+        }
+    },
 
-async function sniCallback(domain, cb) {
-    try {
-        await acme.checkCertificate(domain)
+    async sniCallback(domain, cb) {
+        try {
+            console.log('sni')
+            await server.acme.checkCertificate(domain);  // Referencing `this.acme` 
 
-        const sslContext = tls.createSecureContext(loadCertificates(domain));
-        cb(null, sslContext);
-    } catch (error) {
-        console.error("Error in SNI callback for domain:", domain, error);
-        cb(error); // handle error or use default context
-    }
-}
+            const sslContext = tls.createSecureContext(server.loadCertificates(domain));
+            cb(null, sslContext);
+        } catch (error) {
+            console.error("Error in SNI callback for domain:", domain, error);
+            cb(error);  // handle error or use default context
+        }
+    },
 
-// Create HTTPS server
-const https = Https.createServer({ SNICallback: sniCallback });
+    https: null,  // Will be set after defining `sniCallback`
+    http: Http.createServer()
+};
 
-// Create HTTP server
-const http = Http.createServer();
+// Creating the HTTPS server with the SNI callback
+server.https = Https.createServer({ SNICallback: server.sniCallback });
 
-module.exports = { https, http, acme };
-
+module.exports = server;
