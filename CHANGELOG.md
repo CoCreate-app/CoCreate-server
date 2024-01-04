@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/CoCreate-app/CoCreate-server/compare/v1.0.1...v1.0.2) (2024-01-04)
+
+
+### Bug Fixes
+
+* add '@cocreate/acme' ([73557b9](https://github.com/CoCreate-app/CoCreate-server/commit/73557b97d0a8f47d5cbb2b0b6f66dc87b5aa7a29))
+
 ## [1.0.1](https://github.com/CoCreate-app/CoCreate-server/compare/v1.0.0...v1.0.1) (2024-01-02)
 
 
