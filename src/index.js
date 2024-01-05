@@ -4,9 +4,6 @@ const tls = require('tls');
 const acme = require('@cocreate/acme')
 const fs = require('fs');
 
-// const organizations = {}
-// const hosts = {}
-
 let server = {
     acme: new acme(),
     http: Http.createServer(),
