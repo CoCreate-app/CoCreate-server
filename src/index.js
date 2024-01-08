@@ -25,7 +25,7 @@ function loadCertificates(domain) {
 async function sniCallback(domain, cb) {
     try {
         console.log('sni')
-        await server.acme.checkCertificate(domain);  // Referencing `this.acme` 
+        await server.acme.checkCertificate(domain);
 
         const sslContext = tls.createSecureContext(loadCertificates(domain));
         cb(null, sslContext);
