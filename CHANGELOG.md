@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-server/compare/v1.0.2...v1.1.0) (2024-01-08)
+
+
+### Bug Fixes
+
+* update server object properties ([762b209](https://github.com/CoCreate-app/CoCreate-server/commit/762b209ffbb22ebf9bb992d14f96eeeac2391bda))
+
+
+### Features
+
+* bumped CoCreate dependencies to their latest versions ([e6f76a5](https://github.com/CoCreate-app/CoCreate-server/commit/e6f76a57be9e4581c82fcf3e8e57768df35dfcd8))
+
 ## [1.0.2](https://github.com/CoCreate-app/CoCreate-server/compare/v1.0.1...v1.0.2) (2024-01-04)
 
 
