@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/CoCreate-app/CoCreate-server/compare/v1.1.0...v1.1.1) (2024-01-08)
+
+
+### Bug Fixes
+
+* return if ssl false ([500e7c7](https://github.com/CoCreate-app/CoCreate-server/commit/500e7c7898f3a3a5ecc676ca68cd105cc1f29a6f))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreate-server/compare/v1.0.2...v1.1.0) (2024-01-08)
 
 
