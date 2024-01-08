@@ -25,11 +25,10 @@ function loadCertificates(domain) {
 async function sniCallback(domain, cb) {
     try {
         console.log('sni')
-        await server.acme.checkCertificate(domain);
-
-        const sslContext = tls.createSecureContext(loadCertificates(domain));
-        cb(null, sslContext);
-
+        if (await server.acme.checkCertificate(domain)) {
+            const sslContext = tls.createSecureContext(loadCertificates(domain));
+            cb(null, sslContext);
+        } else return
     } catch (error) {
         console.error("Error in SNI callback for domain:", domain, error);
         cb(error);  // handle error or use default context
