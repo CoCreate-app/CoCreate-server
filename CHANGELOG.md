@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/CoCreate-app/CoCreate-server/compare/v1.1.2...v1.1.3) (2024-03-18)
+
+
+### Bug Fixes
+
+* description ([4a7044a](https://github.com/CoCreate-app/CoCreate-server/commit/4a7044ab74efda9d020cfcb570396432ea1e24ec))
+
 ## [1.1.2](https://github.com/CoCreate-app/CoCreate-server/compare/v1.1.1...v1.1.2) (2024-02-05)
 
 
