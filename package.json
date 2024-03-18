@@ -1,25 +1,19 @@
 {
   "name": "@cocreate/server",
   "version": "1.1.2",
-  "description": "An intergration with Server and CoCreateJS.",
+  "description": "A dynamic SSL certificate management and generation tool for proxies like NGINX, with a fallback to Node.js SSL termination. It seamlessly integrates HTTP, HTTPS, and ACME protocols to ensure secure, encrypted connections.",
   "keywords": [
-    "server",
-    "cocreate",
-    "low-code-framework",
-    "no-code-framework",
-    "cocreatejs",
-    "cocreatejs-component",
-    "cocreate-framework",
-    "no-code",
-    "low-code",
-    "collaborative-framework",
-    "realtime",
-    "realtime-framework",
-    "collaboration",
-    "shared-editing",
-    "html5-framework",
-    "javascript-framework"
-  ],
+    "SSL certificate management",
+    "NGINX",
+    "Node.js SSL termination",
+    "HTTPS",
+    "ACME protocol",
+    "secure connections",
+    "encryption",
+    "dynamic SSL generation",
+    "proxy security",
+    "web security"  
+],
   "publishConfig": {
     "access": "public"
   },

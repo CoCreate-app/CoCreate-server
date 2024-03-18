@@ -1,13 +1,20 @@
 # CoCreate-server
 
-A convenient chain handler allows user to chain multiple CoCreate components together. When one action is complete next one will start. The sequence goes untill all server completed. Grounded on Vanilla javascript, easily configured using HTML5 attributes and/or JavaScript API. Take it for a spin in our [playground!](https://cocreate.app/docs/server)
+CoCreate-server is a dynamic SSL certificate manager that simplifies the process of managing and generating SSL certificates for your web applications. It supports both proxy servers like NGINX and Node.js SSL termination, making it a versatile tool for securing your connections.
 
 ![minified](https://img.badgesize.io/https://cdn.cocreate.app/server/latest/CoCreate-server.min.js?style=flat-square&label=minified&color=orange)
 ![gzip](https://img.badgesize.io/https://cdn.cocreate.app/server/latest/CoCreate-server.min.js?compression=gzip&style=flat-square&label=gzip&color=yellow)
 ![brotli](https://img.badgesize.io/https://cdn.cocreate.app/server/latest/CoCreate-server.min.js?compression=brotli&style=flat-square&label=brotli)
-![GitHub latest release](https://img.shields.io/github/v/release/CoCreate-app/CoCreate-action?style=flat-square)
-![License](https://img.shields.io/github/license/CoCreate-app/CoCreate-action?style=flat-square)
+![GitHub latest release](https://img.shields.io/github/v/release/CoCreate-app/CoCreate-server?style=flat-square)
+![License](https://img.shields.io/github/license/CoCreate-app/CoCreate-server?style=flat-square)
 ![Hiring](https://img.shields.io/static/v1?style=flat-square&label=&message=Hiring&color=blueviolet)
+
+## Features
+
+-   **Dynamic SSL Management:** Automatically manages and renews SSL certificates.
+-   **Proxy Support:** Designed to work with popular proxy servers like NGINX.
+-   **Fallback to Node.js:** Can also terminate SSL directly in Node.js for environments without a proxy.
+-   **ACME Protocol Integration:** Utilizes ACME to automate the certificate issuance process.
 
 ![CoCreate-server](https://cdn.cocreate.app/docs/CoCreate-server.gif)
 
