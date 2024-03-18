@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/CoCreate-app/CoCreate-server/compare/v1.1.3...v1.1.4) (2024-03-18)
+
+
+### Bug Fixes
+
+* replaced keyword spaces with hyphens and lowercase letters only ([0430ae6](https://github.com/CoCreate-app/CoCreate-server/commit/0430ae6a5deb4afa5affda493dac0abc1e23e807))
+
 ## [1.1.3](https://github.com/CoCreate-app/CoCreate-server/compare/v1.1.2...v1.1.3) (2024-03-18)
 
 
