@@ -39,6 +39,6 @@
   },
   "main": "./src/index.js",
   "dependencies": {
-    "@cocreate/acme": "^1.2.11"
+    "@cocreate/acme": "^1.2.12"
   }
 }
