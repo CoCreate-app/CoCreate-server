@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/CoCreate-app/CoCreate-server/compare/v1.1.5...v1.1.6) (2024-06-23)
+
+
+### Bug Fixes
+
+* update dependencies ([b053ecf](https://github.com/CoCreate-app/CoCreate-server/commit/b053ecfe70ecea985a0a7d55758c4ef384dfaac5))
+
 ## [1.1.5](https://github.com/CoCreate-app/CoCreate-server/compare/v1.1.4...v1.1.5) (2024-06-23)
 
 
