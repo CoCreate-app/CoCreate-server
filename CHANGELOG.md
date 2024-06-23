@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/CoCreate-app/CoCreate-server/compare/v1.1.4...v1.1.5) (2024-06-23)
+
+
+### Bug Fixes
+
+* demo css ([80eac38](https://github.com/CoCreate-app/CoCreate-server/commit/80eac38203ecad232206594177a7c7c3194f50d9))
+
 ## [1.1.4](https://github.com/CoCreate-app/CoCreate-server/compare/v1.1.3...v1.1.4) (2024-03-18)
 
 
