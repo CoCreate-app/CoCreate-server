@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreate-server/compare/v1.1.7...v1.2.0) (2024-11-04)
+
+
+### Bug Fixes
+
+* prettier.config options ([7efaaaf](https://github.com/CoCreate-app/CoCreate-server/commit/7efaaaf1af097d760e344c6c36f49ee41db1408b))
+
+
+### Features
+
+* add prettier.config.js and format files ([eeb944d](https://github.com/CoCreate-app/CoCreate-server/commit/eeb944df0bbf418801439627c2e0cf29ad5c4581))
+
 ## [1.1.7](https://github.com/CoCreate-app/CoCreate-server/compare/v1.1.6...v1.1.7) (2024-06-23)
 
 
