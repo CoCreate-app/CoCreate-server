@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/CoCreate-app/CoCreate-server/compare/v1.2.0...v1.2.1) (2025-05-01)
+
+
+### Bug Fixes
+
+* query attributes ([e9d7101](https://github.com/CoCreate-app/CoCreate-server/commit/e9d7101713b387b6a61a10141290d630bc288a36))
+* update [@cocreate](https://github.com/cocreate) dependencies ([b703fc3](https://github.com/CoCreate-app/CoCreate-server/commit/b703fc308a0ef9a29573a709859a8254579b8cff))
+
 # [1.2.0](https://github.com/CoCreate-app/CoCreate-server/compare/v1.1.7...v1.2.0) (2024-11-04)
 
 
